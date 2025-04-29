@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Design</title>
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/m_index.css">
+</head>
+<body>
+    <!-- 전체영역 -->
+    <div id="wrap">
+        <!-- 유틸메뉴영역 -->
+        <div id="util_menu">
+            <ul>
+                <li><a href="">홈</a></li>
+                <li><a href="">로그인</a></li>
+                <li><a href="">즐겨찾기</a></li>
+                <li><a href="">검색</a></li>
+            </ul>
+        </div>
+        <hr />
+        <!-- 해더영역 -->
+        <header>
+            <h2 class="hidden">해더영역</h2>
+            <div class="title_area">
+                <h1>flat <br/> design</h1>
+                <span>toggle button</span>
+            </div>
+            <nav>
+                <h3 class="hidden">gnb영역</h3>
+                <ul>
+                    <li><a href="">홈</a></li>
+                    <li><a href="">플랫디자인이란?</a></li>
+                    <li><a href="">갤러리</a></li>
+                    <li><a href="">문의사항</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 비주얼영역 -->
+        <article>
+            <h2 class="hidden">비주얼영역</h2>
+            <div id="slide">
+                <div>
+                    <ul>
+                        <li>slide1</li>
+                        <li>slide2</li>
+                        <li>slide3</li>
+                    </ul>
+                </div>
+                <span>left</span>
+                <span>right</span>
+            </div>
+        </article>
+        <!-- 컨텐츠영역 -->
+        <section>
+            <h2 class="hidden">컨텐츠영역</h2>
+            <div>
+                <h3>최근 글</h3>
+                <ul>
+                    <li><a href="">안녕하세요 홈페이지가 오픈예정입니다.</a></li>
+
+                    <li><a href="">홈페이지 리뉴얼중입니다.</a></li>
+                    <li><a href="">FLAT DESIGN은 곧 달라집니다.</a></li>
+                    <li><a href="">BLOG 에서 다양한 정보를 제공하고 있습니다.</a></li>
+                    <li><a href="">저는 누굴까요?</a></li>
+                </ul>
+            </div> 
+            <div>
+                <h3>인기 글</h3>
+                <ul>
+                    <li><a href="">안녕하세요 홈페이지가 오픈예정입니다.</a></li>
+
+                    <li><a href="">홈페이지 리뉴얼중입니다.</a></li>
+                    <li><a href="">FLAT DESIGN은 곧 달라집니다.</a></li>
+                    <li><a href="">BLOG 에서 다양한 정보를 제공하고 있습니다.</a></li>
+                    <li><a href="">저는 누굴까요?</a></li>
+                </ul>
+            </div>
+            <div>
+				<dl>
+					<dt>디자인 트렌트 플랫</dt>
+					<dd>디자인 트렌트 플랫</dd>
+					<dt>원색이 포인트 플랫</dt>
+					<dd>원색이 포인트 플랫</dd>
+				</dl>
+			
+			</div>
+			<div>
+				<h3>인기검색어</h3>
+				<ul>
+					<li><a href="">반응형 웹</a></li>
+					<li><a href="">미디어 쿼리</a></li>
+					<li><a href="">뷰포트</a></li>
+					<li><a href="">css 트릭스</a></li>
+					<li><a href="">w3c</a></li>
+					<li><a href="">루크 w</a></li>
+					<li><a href="">css 젠 가든</a></li>
+					<li><a href="">클리어 보스</a></li>
+					<li><a href="">xe</a></li>
+					<li><a href="">워드프레스</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>w3c</h3>
+				<div>
+					<ul>
+						<li>js</li>
+						<li>html</li>
+						<li>css</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">트위터</a></li>
+					<li><a href="">페이스북</a></li>
+					<li><a href="">구글</a></li>
+				</ul>
+			</div>
+        </section>
+        <!-- 푸터영역 -->
+        <footer>
+            <h2 class="hidden">푸터영역</h2>
+            <p>copyright&copy; 2022. flat design blog all rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("nav").hide();
+     		$('header span').click( function(){
+				$('header nav').slideToggle(400);
+		   });
+        });
+    </script>
+</body>
+</html>

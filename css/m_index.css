@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* 초기화  */
+*{box-sizing: border-box;}
+body,div,header,article,section,footer,ul,li,hr,h1,h2,h3,dl,dt,dd,p{margin: 0; padding: 0;}
+body{background: url(../images/s_images/body_bg.png);
+width: 100%; overflow-x: hidden; color:#fff;
+}
+ul,li{list-style: none;}
+a{color:#fff; text-decoration: none;}
+hr{border:none;}
+.hidden{display: none;}
+/* 전체영역  */
+div#wrap{width: 83%; margin: 0 auto; background-color: #2ecc71; }
+/* 유틸메뉴영역  */
+div#util_menu ul{height: 50px;}
+div#util_menu li{width: 25%;height: 100%; float: left; text-indent: -9999px; background-repeat: no-repeat; background-position: center; }
+div#util_menu li:nth-child(1){background-image: url(../images/s_images/info_icon_01.png);}
+div#util_menu li:nth-child(2){background-image: url(../images/s_images/info_icon_02.png);}
+div#util_menu li:nth-child(3){background-image: url(../images/s_images/info_icon_03.png);}
+div#util_menu li:nth-child(4){background-image: url(../images/s_images/info_icon_04.png);}
+div#util_menu + hr { height: 1px; background-color: #fff; }
+/* 해더영역  */
+header{}
+header div.title_area{height: 96px; position: relative;}
+header div.title_area h1{width: 100%; text-align: center; text-transform: uppercase; font-size: 14px; text-shadow: 2px 2px 2px rgba(0,0,0,0.3);position: absolute; top:30px;}
+header div.title_area span{display: block;width: 30px; height: 30px; background: url(../images/s_images/menu_toggle_btn.png); text-indent: -9999px; position:absolute; top:10px; right:10px;}
+header nav ul{height: 216px; background-color: #2c3e50;}
+header nav li{height: 25%; line-height:54px; text-indent:6.25%;
+background: url(../images/s_images/sub_menu_toggle_btn.png) no-repeat right 6.25% center;}
+/* 비주얼영역  */
+article{height: 300px; background-color: #8271fe;}
+article div#slide{width: 100%; height: 100%; position: relative;}
+article div#slide > div{width: 100%; height: 100%; overflow: hidden;}
+article div#slide > div ul{width: 100%; height: 100%; }
+article div#slide > div li{width: 100%; height: 100%; position: absolute; background-repeat: no-repeat; background-position: center; text-indent:-9999px;}
+article div#slide > div li:nth-child(1){background-image: url(../images/p_images/slider_01.jpg);}
+article div#slide > div li:nth-child(2){background-image: url(../images/p_images/slider_02.jpg);left:100%;}
+article div#slide > div li:nth-child(3){background-image: url(../images/p_images/slider_03.jpg);left:200%;}
+article div#slide span{display: block; width:34px ; height: 39px; background: url(../images/s_images/slider_arrow.png); text-indent:-9999px; position: absolute; top:50%; margin-top: -19px;}
+article div#slide span:nth-child(2){left:-17px;}
+article div#slide span:nth-child(3){right:-17px; background-position: -34px 0;}
+/* 컨텐츠영역  */
+section{}
+/* 최근글 인기글*/
+section > div:nth-child(2){height:260px;background:#ffc40f;text-shadow:1px 1px 1px rgba(0,0,0,0.5);}
+section > div:nth-child(3){height:260px;background:#a660c2;text-shadow:1px 1px 1px rgba(0,0,0,0.5);}
+section > div:nth-child(2) h3, section > div:nth-child(3) h3,section > div:nth-child(5) h3{padding-top:40px;margin-bottom:24px;text-align:center;}
+section > div:nth-child(2) ul, section > div:nth-child(3) ul{width:68.75%; height:140px;margin:0 auto;} 
+section > div:nth-child(2) li, section > div:nth-child(3) li{font-size:16px;  background:url(../images/s_images/post_circle_icon.png) no-repeat left center; height:20%;line-height:28px; text-indent:10px; }
+section > div:nth-child(2) li a, section > div:nth-child(3) li a{display:block;width:80%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/* 디자인트랜드  */
+section > div:nth-child(4){height:500px;background:#e65d5d;}
+section > div:nth-child(4) dl{width:75%; margin: 0 auto; position:relative; top:50px; text-align:center;}
+section > div:nth-child(4) dl dt{width:100%;height:150px; border-radius:5px; text-indent:-9999px;box-shadow:1px 1px 1px rgba(0,0,0,0.5);text-shadow:1px 1px 1px rgba(0,0,0,0.5);}
+section > div:nth-child(4) dl dt:nth-child(1){background:#fedc71 url(../images/p_images/gallery_01.jpg) no-repeat center; background-size:cover;}
+section > div:nth-child(4) dl dt:nth-child(3){background:#aae0f8 url(../images/p_images/gallery_02.jpg) no-repeat center; background-size:cover;}
+section > div:nth-child(4) dl dd{width:100%;height:64px; line-height:64px;}
+
+/* 인기검색어 */
+section > div:nth-child(5){height:360px;background:#219af7;}
+section > div:nth-child(5) ul{width:75.625%; margin:0 auto;}
+section > div:nth-child(5) ul li{width:46.67%; height:33px;float:left; border:1px solid #fff; border-radius:5px; margin-bottom:15px;line-height:33px; text-transform:uppercase;text-align:center;}
+section > div:nth-child(5) ul li:nth-child(2n){float:right;}
+
+/* w3c */
+section > div:nth-child(6){width:100%;height:225px;background:#e6567a; text-indent:-9999px;}
+section > div:nth-child(6) h3{height:106px; background:url(../images/s_images/w3c_logo.png) no-repeat center}
+section > div:nth-child(6) > div{width:100%;height:119px; background:#c44968;}
+section > div:nth-child(6) li{width:33.3333333%; height:106px; float:left; background-repeat:no-repeat; background-position:center center;}
+section > div:nth-child(6) li:nth-child(1){background-image:url(../images/s_images/js_logo.png);}
+section > div:nth-child(6) li:nth-child(2){background-image:url(../images/s_images/html_logo.png);}
+section > div:nth-child(6) li:nth-child(3){background-image:url(../images/s_images/css_logo.png);}
+
+/* sns */
+section > div:nth-child(7){height:100px;background:#fff;}
+section > div:nth-child(7) ul{width:75.625%; margin:0 auto; position:relative;top:25px;}
+section > div:nth-child(7) li{width:55px; height:55px; border-radius:100%; background-repeat:no-repeat; background-position:center;text-indent:-9999px; position:absolute;}
+section > div:nth-child(7) li:nth-child(1){background-image:url(../images/s_images/social_icon_01.png);left:0}
+section > div:nth-child(7) li:nth-child(2){background-image:url(../images/s_images/social_icon_02.png);left:50%; margin-left:-27.5px;}
+section > div:nth-child(7) li:nth-child(3){background-image:url(../images/s_images/social_icon_03.png);right:0}
+
+/* 푸터영역  */
+footer{height: 70px; background-color: #474747;}
+footer p{width:66.25%; margin:0 auto; text-align:center; text-transform:uppercase; position:relative;top:20px; font-size:10px;}
